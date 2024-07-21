@@ -33,7 +33,7 @@ h1 {
     margin: 20px;
     font-size: 1.2em;
 }
-.photo-gallery {
+.photo-gallery, .video-message, .music-controls {
     margin: 20px;
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -41,7 +41,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
-.photo-gallery h2 {
+.photo-gallery h2, .video-message h2, .music-controls h2 {
     margin-bottom: 20px;
 }
 .photos {
@@ -69,6 +69,19 @@ video {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.music-controls button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+.music-controls button:hover {
+    background-color: #e64e4e;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
@@ -82,6 +95,12 @@ footer {
     }
     .photos img {
         max-width: 100%;
+    }
+    video {
+        max-width: 100%;
+    }
+    .music-controls button {
+        width: 100%;
     }
 }
 
